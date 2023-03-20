@@ -1,18 +1,20 @@
 // import CartWidget from ./components/CartWidget";
-import ComponenteA from "./components/ComponenteA";
+// import ComponenteA from "./components/ComponenteA";
 import NavBar from "./components/NavBar";
 import { ChakraProvider } from '@chakra-ui/react'
+import * as ReactDOM from 'react-dom/client'
 
-const App = () => {
-  //Logica va aca adentro
-
-  return (
+const rootElement = document.getElementById('root')
+ReactDOM.createRoot(rootElement).render
+   (
     <>
+    
      <ChakraProvider>
-      <ComponenteA nombre={"CoderHouse"} edad={25} />
+      
       <NavBar/>
       </ChakraProvider>
+      
     </>
   );
-};
+
 export default App;
