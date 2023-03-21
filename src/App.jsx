@@ -1,26 +1,12 @@
 import React from "react";
-import NavBar from "./NavBar";
-import Home from "./Home";
-import Footer from "./Footer";
-import About from "./About";
+import { MainRoutes } from "./routes/MainRoutes";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-const App = () => {
+function App () {
   return (
-    <BrowserRouter>
-      <NavBar />
+   
+      <MainRoutes/>
+   
+  )
+}
 
-
-      <Routes>
-        <Route exact path="/" element={<About />} />
-        <Route exact path="/home" element={<Home />} />
-      </Routes>
-
-
-      <Footer />
-    </BrowserRouter>
-  );
-};
-
-export default App;
+export default App
